@@ -24,4 +24,4 @@ The following assumes the use of `node@>=10`.
 `yarn test`
 
 ## Flattening Example
-./solidityFlattener.pl --contractsdir=contracts --mainsol=UniswapV2Router02.sol --verbose
+./solidityFlattener.pl --contractsdir=contracts --remapdir "contracts/@uniswap=./node_modules/@uniswap" --mainsol=UniswapV2Router02.sol --verbose
